@@ -62,14 +62,14 @@ public class homework {
 	}
 	
 	public static void sayHelloTo (String name) {//task7
-		System.out.println("Привет, " + name + "!");
+		System.out.println("РџСЂРёРІРµС‚, " + name + "!");
 	}
 	
 	public static void isYear(int x) {//task8
 		if(x % 4 == 0 && x % 100 != 0 || x % 400 == 0) {
-			System.out.println("Год " + x + " високосный");
+			System.out.println("Р“РѕРґ " + x + " РІРёСЃРѕРєРѕСЃРЅС‹Р№");
 		}else {
-			System.out.println("Год " + x + " невисокосный");
+			System.out.println("Р“РѕРґ " + x + " РЅРµРІРёСЃРѕРєРѕСЃРЅС‹Р№");
 		}	
 	}
 }
