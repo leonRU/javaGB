@@ -36,7 +36,12 @@ public class homework {
 	}
 	
 	public static int calculate(int x, int y, int z, int w) {//task3
-		return x * (y + (z / w));
+		try {
+			return x * (y + (z / w));
+		}catch(Exception ex) {
+			System.out.println("Exception: " + ex);
+			return 0;
+		}	
 	}
 	
 	public static boolean task4(int x, int y) { //task4
