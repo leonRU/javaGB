@@ -14,9 +14,14 @@ public class homework {
 		int a = 2;
 		int b = 4;
 		int c = 10;
-		int d = 2;
+		int d = 0;
 		int e = 18;
-		System.out.println("Task 3. a *(b + (c / d)) = " + calculate(a, b, c, d)); //task3
+		
+		try {
+			System.out.println("Task 3. a *(b + (c / d)) = " + calculate(a, b, c, d)); //task3
+		}catch(Exception ex){
+			System.out.println("Task 3. Exception: " + ex);						
+		}
 		
 		System.out.println("Task 4. 10 <= arg1 + arg2 <= 20 is " + task4(a,e)); //task4
 		
@@ -36,16 +41,11 @@ public class homework {
 	}
 	
 	public static int calculate(int x, int y, int z, int w) {//task3
-		try {
-			return x * (y + (z / w));
-		}catch(Exception ex) {
-			System.out.println("Exception: " + ex);
-			return 0;
-		}	
+		return x * (y + (z / w));	
 	}
 	
 	public static boolean task4(int x, int y) { //task4
-		if(x + y >= 10 && x + y <=20) {
+		if(x + y >= 10 && x + y <=20) { // return x + y >= 10 && x + y <=20
 			return true;
 		}
 		return false;
@@ -59,8 +59,8 @@ public class homework {
 		}
 	}
 	
-	public static boolean isNegative(int x) {//task6
-		if(x<0) {
+	public static boolean isNegative(int x) {//task6 
+		if(x<0) { // return x<0;
 			return true;
 		}
 		return false;
