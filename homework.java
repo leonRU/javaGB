@@ -45,7 +45,7 @@ public class homework {
 	}
 	
 	public static boolean task4(int x, int y) { //task4
-		if(x + y >= 10 && x + y <=20) { // return x + y >= 10 && x + y <=20
+		if(x + y >= 10 && x + y <= 20) { // return x + y >= 10 && x + y <= 20
 			return true;
 		}
 		return false;
