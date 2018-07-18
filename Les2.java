@@ -25,7 +25,7 @@ public class Les2 {
 		System.out.println(checkBalance(balance_arr));
 		
 		System.out.println("TASK 7: shift in array.");
-		int[] shift_arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; //10
+		int[] shift_arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}; 
 		int n = 3;
 		
 		System.out.println("Initial array: " + Arrays.toString(shift_arr) +", shift = " + n);
@@ -62,7 +62,6 @@ public class Les2 {
 				}
 			}
 		}
-	//	System.out.println("shift % arr.length = 0");
 		return arr;
 	}
 
@@ -174,37 +173,33 @@ public class Les2 {
 		return false;
 	}
 }
+// Console log
+// TASK 1: array inverting.
+// Initial array: [1, 0, 1, 0, 0, 1]
+// Final array:   [0, 1, 0, 1, 1, 0]
+// TASK 2: fill array.
+// Initial array: [0, 0, 0, 0, 0, 0, 0, 0]
+// Final array:   [0, 3, 6, 9, 12, 15, 18, 21]
+// TASK 3: change array.
+// Initial array: [1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1]
+// Final array:   [2, 10, 6, 4, 11, 8, 10, 4, 8, 8, 9, 2]
+// TASK 4: fill the diagonals of array.
+// Initial array: 
+// [0, 0, 0]
+// [0, 0, 0]
+// [0, 0, 0]
+// Final array:   
+// [1, 0, 1]
+// [0, 1, 0]
+// [1, 0, 1]
+// TASK 5: find max and min in array.
+// Array: [73, 60, 50, 35, 49, 97, 92, 56, 59, 51]
+// Max = 97, min = 35.
+// TASK 6: checkBalance in array.
+// Initial array: [2, 2, 3, 1, 4]
+// direction > 0 && check_left > check_right; left = 7, right = 5, k = 0
+// false
+// TASK 7: shift in array.
+// Initial array: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], shift = 3
+// Final array:   [7, 8, 9, 0, 1, 2, 3, 4, 5, 6]
 
-//			if(check_left < check_right) {
-//				System.out.println("was left > right, now left < right; left = " + check_left + ", right = " + check_right + ", k = " + k);
-//				return false;
-//			}
-		
-		
-//		if(check_left > check_right) {
-//			for(int k = 1; k < arr.length/2; k++) {
-//				check_left -= arr[arr.length/2 - k];
-//				check_right += arr[arr.length/2 - k];
-//				if(check_left == check_right) {
-//					System.out.println("left = right = " + check_left + ", k = " + k);
-//					return true;
-//				}
-//				if(check_left < check_right) {
-//					System.out.println("was left > right, now left < right; left = " + check_left + ", right = " + check_right + ", k = " + k);
-//					return false;
-//				}
-//			}
-//		}else {
-//			for(int k = 1; k < arr.length/2; k++) {
-//				check_left += arr[arr.length/2 + k];
-//				check_right -= arr[arr.length/2 + k];
-//				if(check_left == check_right) {
-//					System.out.println("left = right = " + check_left + ", k = " + k);
-//					return true;
-//				}
-//				if(check_left > check_right) {
-//					System.out.println("was left > right, now left < right; left = " + check_left + ", right = " + check_right + ", k = " + k);
-//					return false;
-//				}
-//			}
-//		}
