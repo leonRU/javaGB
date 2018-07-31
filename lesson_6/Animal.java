@@ -1,8 +1,8 @@
 package lesson_6;
 
 public class Animal {
-	double max_run_range;
-	double max_swim_range;
+	int max_run_range;
+	int max_swim_range;
 	double max_jump_range;
 	
 	public Animal() {}
