@@ -32,7 +32,7 @@ public class Main {
 		//Bubble time = 32.826 sec
 		//sortSelect time = 10.13 sec
 		//sortInsert time = 12.276 sec
-		//для BOUND = 1.000.000 результатов за вменяемое время я не дождался
+		//для BOUND = 1.000.000 результатов я не дождался
 
 		
 		
