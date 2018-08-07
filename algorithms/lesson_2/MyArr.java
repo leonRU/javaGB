@@ -36,7 +36,7 @@ public class MyArr {
 		this.size--;
 	}
 	
-//3.добавления, 
+//	2.добавления, 
 	
 	public void insert(int value) {
 //		int i;
@@ -53,7 +53,7 @@ public class MyArr {
 		this.size++;
 	}
 	
-	//3.поиска элемента массива.
+	//2.поиска элемента массива.
 	public boolean find(int value) {
 		int i;
 		for(i = 0; i < this.size; i++) {
@@ -65,7 +65,7 @@ public class MyArr {
 			return true;
 		}
 	}
-	//3.поиска элемента массива.
+	//2.поиска элемента массива.
 	public boolean binaryFind(int value) {
 		int bot = 0;
 		int top = this.size - 1;
