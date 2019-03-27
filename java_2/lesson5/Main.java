@@ -11,6 +11,8 @@ public class Main{
     public static void main(String[] args){
         Arrays.fill(arr, 1);
         withoutThreads();
+        
+        Arrays.fill(arr, 1);
         withThreads();
 
         /*RESULT
