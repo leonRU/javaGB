@@ -44,8 +44,20 @@ public class Main{
         System.arraycopy(arr, 0, arr1, 0, h);
         System.arraycopy(arr, h, arr2, 0, h);
 
-        new Thread(new MyRunnable(arr1, 0)).start();
-        new Thread(new MyRunnable(arr2, h)).start();
+        Thread t1 = new Thread(new MyRunnable(arr1, 0));
+        Thread t2 = new Thread(new MyRunnable(arr2, h));
+        
+        t1.start();
+        t2.start();
+        
+
+        try{
+            t1.join();
+            t2.join();
+        }catch (InterruptedException ex){
+            ex.printStackTrace();
+        }
+
 
         System.arraycopy(arr1, 0, arr, 0, h);
         System.arraycopy(arr2, 0, arr, h, h);
